@@ -1,23 +1,76 @@
-import logo from './logo.svg';
+// Styles
 import './App.css';
 
+
+// img-logo
+import logo from './assets/logoBPV.svg'
+
+// components
+import { PlaceChart } from './components/PlaceChart';
+import { PlacesList } from './components/PlacesList';
+
+// react
+import { useContext } from 'react';
+import { AddPlace } from './components/AddPlace';
+import { SocketContext } from './context/SocketContext';
+
+
+
+
+
 function App() {
+
+
+  const { online } = useContext(SocketContext);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div  >
+
+      {/* Nav bar */}
+      <nav className="navbar nav-con">
+        <div className='d-flex'>
+          <img className='m-2 ml-3' src={logo} alt='img' />
+          <h3 className='m-2  '>Best places to visit</h3>
+        </div>
+
+        <div className='d-flex'>
+        
+          {
+            
+            online
+              ? <span className='m-4 text-success'>Online</span>
+              : <span className='m-4 text-danger'>Ofline</span>
+          }
+
+        </div>
+
+
+
+      </nav>
+
+      <div className="container-fluid">
+
+        <div className="row">
+
+          {/* places */}
+          <div className="col ">
+
+            <PlacesList/>
+          </div>
+
+          {/* Grafica */}
+          <div className="col ">
+            <PlaceChart />
+
+            {/* Add place */}
+
+            <AddPlace />
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
