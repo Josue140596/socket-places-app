@@ -1,5 +1,5 @@
 
-# App-socket-places 
+# App-socket-places :zap::zap::zap::zap:
 
 This is a web page where you can vote your favorite place to visit also you will see the votes that has each one, another important thing is that you can add your favorite places giving your point of view.
 
