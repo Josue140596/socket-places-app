@@ -3,7 +3,7 @@ import './App.css';
 
 
 // img-logo
-import logo from '../src/assets/logoBPV.svg';
+import logo from './logoBPV.svg';
 
 // components
 import { PlaceChart } from './components/PlaceChart';
