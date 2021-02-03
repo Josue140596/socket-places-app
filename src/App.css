@@ -34,15 +34,13 @@ body {
   /* border: solid 1px blue; */
   flex: 4;
   height: 158px;
-  width: 218px;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.imgs{
-
+.imgs {
   width: 220px;
   height: 158px;
-
 }
 
 .for-votes {
@@ -81,7 +79,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 /* Add place */
@@ -95,17 +93,13 @@ body {
 }
 
 .title-and-name-input {
-
   display: flex;
 }
 
-textarea, input{
+textarea,
+input {
   outline: none;
 }
-
-
-
-
 
 /* responsive */
 
@@ -116,7 +110,12 @@ textarea, input{
   }
   .title-and-name-input {
     flex-direction: column;
-}
-}
+  }
 
+  .imgs{
 
+    width: 100%;
+    height: auto;
+  
+  }
+}
