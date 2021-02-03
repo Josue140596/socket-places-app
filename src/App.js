@@ -3,7 +3,7 @@ import './App.css';
 
 
 // img-logo
-import logo from './logoBPV.svg';
+// import logo from './logoBPV.svg';
 
 // components
 import { PlaceChart } from './components/PlaceChart';
@@ -31,7 +31,7 @@ function App() {
       {/* Nav bar */}
       <nav className="navbar nav-con">
         <div className='d-flex'>
-          <img className='m-2 ml-3' src={logo} alt='img' />
+          {/* <img className='m-2 ml-3' src={logo} alt='img' /> */}
           <h3 className='m-2  '>Best places to visit</h3>
         </div>
 
