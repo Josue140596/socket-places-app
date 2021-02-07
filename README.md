@@ -21,9 +21,4 @@ import io from 'socket.io-client';
             transports: ['websocket']
         })
         , [severPath]);
-
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> 34937937c579b7b4ce0834dc4f7e173cefbeabce
