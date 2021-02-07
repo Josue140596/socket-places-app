@@ -96,6 +96,16 @@ body {
   display: flex;
 }
 
+.loading{
+
+    display: flex;
+    height: 86vh;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
 textarea,
 input {
   outline: none;
